@@ -22,6 +22,12 @@ public class EmployeeData {
 	private String projectName;
 	@Column
 	private String Client;
+	@Column
+	private String managerId;
+	@Column
+	private String managerName;
+	@Column
+	private String skills;
 	
 	public String getEmployeeId() {
 		return employeeId;
@@ -71,11 +77,31 @@ public class EmployeeData {
 	public void setClient(String client) {
 		Client = client;
 	}
+	public String getManagerId() {
+		return managerId;
+	}
+	public void setManagerId(String managerId) {
+		this.managerId = managerId;
+	}
+	public String getManagerName() {
+		return managerName;
+	}
+	public void setManagerName(String managerName) {
+		this.managerName = managerName;
+	}
+	public String getSkills() {
+		return skills;
+	}
+	public void setSkills(String skills) {
+		this.skills = skills;
+	}
 	@Override
 	public String toString() {
 		return "EmployeeData [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", jobRole=" + jobRole + ", experience=" + experience + ", band=" + band + ", projectName="
-				+ projectName + ", Client=" + Client + "]";
+				+ projectName + ", Client=" + Client + ", managerId=" + managerId + ", managerName=" + managerName
+				+ ", skills=" + skills + "]";
 	}
+	
 	
 }
